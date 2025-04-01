@@ -7,7 +7,7 @@ int main()
     printf("\n-----------------------------------------------------");
 
     char str[21];
-    printf("\n\nIngrese una palabra: ");
+    printf("\n\nIngrese una palabra (hasta 20 digitos):  ");
     scanf("%20s", &str);
     
     int len = strlen(str);
