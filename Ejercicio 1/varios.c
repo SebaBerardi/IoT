@@ -117,16 +117,17 @@ typedef struct date_s
     int day;
 } date_t;
 
-
-// WIP
 // Al ingresar dos fechas encuentre la diferencia, en días, entre ellas.
+// AXIOMAS:
+//     - start < finish
+//     - Los años bisiestos NO existen.
+//     - Se considera que el año tiene 365 días y los meses tienen 30 días. Matemáticamente no funciona, pero es así.
 int days_left(date_t start, date_t finish)
 {
-    int days = 0;
-    int days_in_month[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    days += abs(start.year * 365);
-    int monthDiff = abs(start.month - finish.month);
-
+    int days = abs(start.year - finish.year) * 365;
+    days += abs(start.month - finish.month) * 30;
+    days += abs(start.day - finish.day);
+    return days;
 }
 
 int main()
