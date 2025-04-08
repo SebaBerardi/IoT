@@ -2,32 +2,28 @@
 #include <stdint.h>
 #include <string.h>
 
-int main()
-{
-    printf("\n-----------------------------------------------------");
+#include <stdio.h>
 
-    char str[21];
-    printf("\n\nIngrese los digitos continuamente ");
-    scanf("%20s", &str);
+int main() {//array_size
+    printf("\n\n-----------------------------------------------------\n");
     
-    int len = strlen(str);
-    int max=-10;
-    int min=10;
-    int valor;
+    int arr[] = {12, 5, 8, 21, -4, 9, 0, 17}; 
+    int n = sizeof(arr) / sizeof(arr[0]);
 
-    for ( int digito = len - 1; digito >= 0; digito-- ){
-        
-        valor = str[digito];
-        if (max<valor){
-            max= valor;
-        }
-        if (min>valor){
-            min=valor;
-        }   
+    int max = arr[0];
+    int min = arr[0];
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max)
+            max = arr[i];
+        if (arr[i] < min)
+            min = arr[i];
     }
 
-    printf("El valor maximo es %d \n",max);
-    printf("El valor maximo es %d \n",min);
-    
-    printf("\n\n-----------------------------------------------------");
-}
+    printf("Máximo: %d\n", max);
+    printf("Mínimo: %d\n", min);
+
+    printf("\n\n-----------------------------------------------------\n");
+
+    return 0;
+    }
