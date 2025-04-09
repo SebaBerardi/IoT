@@ -2,10 +2,8 @@
 #include <stdint.h>
 #include <string.h>
 
-#include <stdio.h>
-
-int main() {//array_size
-    printf("\n\n-----------------------------------------------------\n");
+int main() {
+    printf("-----------------------------------------------------\n\n");
     
     int arr[] = {12, 5, 8, 21, -4, 9, 0, 17}; 
     int n = sizeof(arr) / sizeof(arr[0]);
@@ -21,7 +19,7 @@ int main() {//array_size
     }
 
     printf("Máximo: %d\n", max);
-    printf("Mínimo: %d\n", min);
+    printf("Mínimo: %d", min);
 
     printf("\n\n-----------------------------------------------------\n");
 
