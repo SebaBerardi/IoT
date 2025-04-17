@@ -23,7 +23,7 @@ void print_reverse_array(void *array, size_t data_type, size_t array_size) {
     printf("\n\nArray inverso: ");
     
     // Imprimimos en orden inverso
-    for (size_t i = array_size; i > 0; i--) {
+    for (size_t i = array_size ; i > 0; i--) {
         
         if (data_type == sizeof(char)) {
             printf("%c", ((char*)array)[i-1]);
