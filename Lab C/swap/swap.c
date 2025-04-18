@@ -1,19 +1,38 @@
-//int swap(void *elem_1, void *elem_2, size_t data_type)
 #include <stdio.h>
+#include <string.h>  // Para memcpy
+#include <stdlib.h>  // Para malloc
 
-int main() {
-    int a = 496;
-    int b = 0;
-    int temp = 0;
-    int *p0, *p1;
+int swap(void *elem_1, void *elem_2, size_t data_type) {
+    if (elem_1 == NULL || elem_2 == NULL || data_type == 0) {
+        return -1; // Error: punteros nulos o tipo de dato inválido
+    }
 
-    printf("Antes del intercambio: x = %d, y = %d\n", a, b);
-    p0=&a;
-    p1=&b;
-    temp = *p0;
-    *p0 = *p1;
-    *p1 = temp;
-    printf("Despues del intercambio: x = %d, y = %d\n", a, b);
+    
+    void *temp = malloc(data_type);
+    if (temp == NULL) {
+        return -1; 
+    }
+
+    // Intercambiar los contenidos
+    memcpy(temp, elem_1, data_type);      // temp = *elem_1
+    memcpy(elem_1, elem_2, data_type);    // *elem_1 = *elem_2
+    memcpy(elem_2, temp, data_type);      // *elem_2 = temp
+
+    free(temp);
+
     return 0;
 }
 
+int main() {
+    int a = 1;
+    int b = 10;
+    printf("Antes del swap: a = %d, b = %d\n", a, b);
+
+    if (swap(&a, &b, sizeof(char)) == 0) {
+        printf("Después del swap: a = %d, b = %d\n", a, b);
+    } else {
+        printf("Error en el intercambio\n");
+    }
+
+    return 0;
+}

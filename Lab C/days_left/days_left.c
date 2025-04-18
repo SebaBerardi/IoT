@@ -1,25 +1,69 @@
 #include <stdio.h>
-#include <stdint.h>
-#include <string.h>
+#include <stdlib.h>
 
-int main() {
-    printf("-----------------------------------------------------\n\n");
-    
-    int start_day[] = {13,5,2024};
-    int finish_day[] = {12,5,2024}; 
-    
-    int day = 0;
-    day= start_day[0]-finish_day[0];
-    //int month= 
-    //    if (arr[i] < min)
-    //        min = arr[i];
-    printf("Días %d", day);
+typedef struct {
+    int day;
+    int month;
+    int year;
+} date_t;
 
-    printf("\n\n-----------------------------------------------------");
+int is_bisiesto(int year) {
+    return (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+}
 
+int dias_en_mes(int month, int year) {
+    switch (month) {
+        case 2: return is_bisiesto(year) ? 29 : 28;
+        case 4: case 6: case 9: case 11: return 30;
+        default: return 31;
+    }
+}
+
+// Compara dos fechas: retorna -1 si a < b, 0 si iguales, 1 si a > b, para validar si la fecha final es despues de la inicial
+int compare_dates(date_t a, date_t b) {
+    if (a.year != b.year) return (a.year < b.year) ? -1 : 1;
+    if (a.month != b.month) return (a.month < b.month) ? -1 : 1;
+    if (a.day != b.day) return (a.day < b.day) ? -1 : 1;
     return 0;
+}
+
+// Avanza un día en una fecha
+void next_day(date_t *date) {
+    date->day++;
+    if (date->day > dias_en_mes(date->month, date->year)) {
+        date->day = 1;
+        date->month++;
+        if (date->month > 12) {
+            date->month = 1;
+            date->year++;
+        }
+    }
+}
+
+int days_left(date_t start, date_t finish) {
+    int count = 0;
+
+    // Si start > finish, los intercambiamos
+    if (compare_dates(start, finish) > 0) {
+        date_t temp = start;
+        start = finish;
+        finish = temp;
     }
 
-    //printf("Máximo: %d\n", max);
+    while (compare_dates(start, finish) != 0) {
+        next_day(&start);
+        count++;
+    }
 
-    
+    return count;
+}
+
+int main() {
+    date_t f1 = {13, 5, 2003};
+    date_t f2 = {21, 11, 2003};
+
+    int dias = days_left(f1, f2);
+    printf("Diferencia en días: %d\n", dias);
+
+    return 0;
+}
