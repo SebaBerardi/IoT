@@ -7,7 +7,7 @@ int32_t bin2dec(int32_t binary, bool sign) {
     
     printf("\n\nTener en cuenta que el codigo funciona unicamente cuando se le ingresa un número binario, es decir en el formato 0xb.\n");
     
-    int64_t decimal = 0;
+    int32_t decimal = 0;
     int base = 1;
     int bits = 32;
     
@@ -38,7 +38,7 @@ int32_t bin2dec(int32_t binary, bool sign) {
 
 // Función principal para probar el conversor
 int main() {
-    int32_t positivo = 0b01111111111111111111111111111111; // 10 en binario
+    int32_t positivo = 0b01111111111111111111111111111111;
     bool signo = false;
     printf("\n\nDecimal: %d\n\n\n", bin2dec(positivo, signo));
 }
