@@ -1,3 +1,5 @@
+// Encuentre los elementos máximo y mínimo en un array.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

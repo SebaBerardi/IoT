@@ -1,8 +1,5 @@
-#include <stdio.h>
+// Encuentre la longitud de un string (sin usar funciones de biblioteca) retorna -1 en caso de error
 
-
-// Devuelve la longitud del string (número de caracteres antes del '\0'),
-// o -1 si string es NULL.
 typedef int int32_t; // se declara que int32_t es un tipo igual a int
 
 int32_t string_length(char *string) {
@@ -17,7 +14,3 @@ int32_t string_length(char *string) {
 
     return len;
 }
- int main() {
-    char st[] = "la re puta madre";
-    printf("%d", string_length(st));
- }

@@ -1,4 +1,6 @@
-#include <stdint.h>
+// Cuente el número total de palabras en un string. (sin usar librerías standard).
+
+typedef int int32_t; // se declara que int32_t es un tipo igual a int
 
 int32_t string_words(char *string) {
     if (string == 0) return -1; // Error: puntero nulo

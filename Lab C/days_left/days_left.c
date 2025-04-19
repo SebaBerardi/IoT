@@ -1,3 +1,5 @@
+// Al ingresar dos fechas encuentre la diferencia, en días, entre ellas.
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -56,14 +58,4 @@ int days_left(date_t start, date_t finish) {
     }
 
     return count;
-}
-
-int main() {
-    date_t f1 = {13, 5, 2003};
-    date_t f2 = {21, 11, 2003};
-
-    int dias = days_left(f1, f2);
-    printf("Diferencia en días: %d\n", dias);
-
-    return 0;
 }

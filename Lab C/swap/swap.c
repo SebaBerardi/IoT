@@ -1,3 +1,5 @@
+//Intercambie el contenido de dos elementos, deberá retornar si la operacion se realizo con exito (0) o no (-1)
+
 #include <stdio.h>
 #include <string.h>  // Para memcpy
 #include <stdlib.h>  // Para malloc
@@ -19,20 +21,6 @@ int swap(void *elem_1, void *elem_2, size_t data_type) {
     memcpy(elem_2, temp, data_type);      // *elem_2 = temp
 
     free(temp);
-
-    return 0;
-}
-
-int main() {
-    int a = 1;
-    int b = 10;
-    printf("Antes del swap: a = %d, b = %d\n", a, b);
-
-    if (swap(&a, &b, sizeof(char)) == 0) {
-        printf("Después del swap: a = %d, b = %d\n", a, b);
-    } else {
-        printf("Error en el intercambio\n");
-    }
 
     return 0;
 }

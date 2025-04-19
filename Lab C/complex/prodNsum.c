@@ -8,9 +8,7 @@ typedef struct complex_s
     float i;
 } complex_t;
 
-
-
-// Multiplique dos números complejos:
+// Sume dos números complejos
 complex_t prod(complex_t a, complex_t b)
 {
     complex_t result;
@@ -19,19 +17,11 @@ complex_t prod(complex_t a, complex_t b)
     return result;
 }
 
-int main()
+// Multiplique dos números complejos
+complex_t sum(complex_t a, complex_t b)
 {
-    complex_t a, b, s, p;
-    a.r = 1;
-    a.i = 2;
-
-    b.r = 5;
-    b.i = 8;
-
-    p = prod(a, b);
-
-    printf("PROD: %f %f\n", p.r, p.i);
-
-
-    return 0;
+    complex_t result;
+    result.r = a.r + b.r;
+    result.i = a.i + b.i;
+    return result;
 }

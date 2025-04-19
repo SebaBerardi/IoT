@@ -1,3 +1,5 @@
+// Convierta un número binario en uno decimal
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdint.h>
@@ -34,11 +36,4 @@ int32_t bin2dec(int32_t binary, bool sign) {
     printf("\nSi el siguiente valor es incorrecto, esto puede deverse a que si el valor ingresado tiene un 1 en el bit 31 y no tiene signo, su valor decimal es mayor a 2147483647 el cual es el valor mas grande que se puede guardar en un int32.");
 
     return decimal;
-}
-
-// Función principal para probar el conversor
-int main() {
-    int32_t positivo = 0b01111111111111111111111111111111;
-    bool signo = false;
-    printf("\n\nDecimal: %d\n\n\n", bin2dec(positivo, signo));
 }

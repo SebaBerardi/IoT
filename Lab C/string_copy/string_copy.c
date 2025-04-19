@@ -1,8 +1,7 @@
-#include <stdio.h>
+// Copie un string en otro string. (sin usar librerías standard)
 
-// Función que copia un string source en destination
 int string_copy(char *source, char *destination) {
-    if (source == NULL || destination == NULL) {
+    if (!source || !destination) {
         return -1; // Error por puntero nulo
     }
 

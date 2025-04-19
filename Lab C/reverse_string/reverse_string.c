@@ -1,22 +1,21 @@
+// Imprima y devuelve un string al revés
+
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
 
 char *reverse_string(char *string) {
+    if (!string) return NULL;
     
-    int array_size = strlen (string);    
+    int length = strlen(string);
     
-    printf("\n\nSu string inverso es: "); 
-
-    for ( int digito = array_size - 1; digito >= 0; digito-- ){
-        printf("%c",string[digito]);
+    // Invertir el string
+    for (int i = 0, j = length - 1; i < j; i++, j--) {
+        char temp = string[i];
+        string[i] = string[j];
+        string[j] = temp;
     }
-
-    printf("\n\n\n");
-}
-
-int main()
-{
-    char *string = "Hola mundo";
-    *reverse_string(string);
+    
+    printf("\nSu string inverso es: %s\n\n", string);
+    return string;
 }

@@ -1,32 +1,40 @@
 // Extraiga una subcadena de una cadena dada, debe retornar -1 en caso de no encontrarse. (sin usar librerías standard).
-#include <stdio.h>
-#include <math.h>
-#include <string.h>
 
 int find_in_string(char *haystack, char *needle)
 {
+    // Calcular largo de haystack
+    int largo_haystack = 0;
+    while (haystack[largo_haystack] != '\0') {
+        largo_haystack++;
+    }
 
-    int largo_haystack = strlen(haystack);
-    int largo_needle = strlen(needle);
+    // Calcular largo de needle
+    int largo_needle = 0;
+    while (needle[largo_needle] != '\0') {
+        largo_needle++;
+    }
 
+    // Si needle está vacío, retornar 0 (como strstr)
+    if (largo_needle == 0) {
+        return 0;
+    }
+
+    // Búsqueda principal
     for (int i = 0; i <= largo_haystack - largo_needle; i++)
     {
-        for (int j = 0, i2 = i; j < largo_needle && haystack[i2] == needle[j]; j++, i2++)
+        int encontrado = 1;
+        for (int j = 0; j < largo_needle; j++)
         {
-            if (j == largo_needle - 1)
+            if (haystack[i + j] != needle[j])
             {
-                return i;
+                encontrado = 0;
+                break;
             }
+        }
+        if (encontrado) {
+            return i;
         }
     }
 
     return -1;
 }
-
-int main()
-{
-    char holanda[8] = "holanda";
-    printf("Pos: %i\n", find_in_string(holanda, "ola"));
-    return 0;
-}
-
