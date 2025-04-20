@@ -238,7 +238,6 @@ int main()
     Estudiante *listaEstudiantes = NULL;
     int opcion;
     int ci_busqueda;
-    Estudiante *encontrado = NULL;
     do
     {
         printf("1 - Agregar Estudiante\n");
@@ -289,7 +288,7 @@ int main()
             {
                 printf("Ingrese la CI del estudiante a buscar: ");
                 scanf("%d", &ci_busqueda);
-                encontrado = buscarPorCI(listaEstudiantes, ci_busqueda);
+                Estudiante *encontrado = buscarPorCI(listaEstudiantes, ci_busqueda);
                 if (encontrado != NULL)
                 {
                     printf("\n--- Estudiante Encontrado ---\n");
