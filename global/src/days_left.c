@@ -1,10 +1,6 @@
 // Al ingresar dos fechas encuentre la diferencia, en días, entre ellas.
 
-typedef struct {
-    int day;
-    int month;
-    int year;
-} date_t;
+#include "global.h"
 
 int is_bisiesto(int year) {
     return (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));

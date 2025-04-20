@@ -1,0 +1,104 @@
+[
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\bin2dec.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\bin2dec.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/bin2dec.c",
+  "output": "CMakeFiles/global.dir/src/bin2dec.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\complex.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\complex.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/complex.c",
+  "output": "CMakeFiles/global.dir/src/complex.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\conNvocs.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\conNvocs.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/conNvocs.c",
+  "output": "CMakeFiles/global.dir/src/conNvocs.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\days_left.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\days_left.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/days_left.c",
+  "output": "CMakeFiles/global.dir/src/days_left.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\eq_solver.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\eq_solver.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/eq_solver.c",
+  "output": "CMakeFiles/global.dir/src/eq_solver.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\find_in_sting.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\find_in_sting.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/find_in_sting.c",
+  "output": "CMakeFiles/global.dir/src/find_in_sting.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\init_lab.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\init_lab.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/init_lab.c",
+  "output": "CMakeFiles/global.dir/src/init_lab.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\inverse_array.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\inverse_array.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/inverse_array.c",
+  "output": "CMakeFiles/global.dir/src/inverse_array.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\matrixsub.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\matrixsub.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/matrixsub.c",
+  "output": "CMakeFiles/global.dir/src/matrixsub.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\max-min.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\max-min.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/max-min.c",
+  "output": "CMakeFiles/global.dir/src/max-min.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\reverse_string.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\reverse_string.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/reverse_string.c",
+  "output": "CMakeFiles/global.dir/src/reverse_string.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\string_copy.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\string_copy.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/string_copy.c",
+  "output": "CMakeFiles/global.dir/src/string_copy.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\string_length.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\string_length.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/string_length.c",
+  "output": "CMakeFiles/global.dir/src/string_length.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\string_to.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\string_to.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/string_to.c",
+  "output": "CMakeFiles/global.dir/src/string_to.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\string_words.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\string_words.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/string_words.c",
+  "output": "CMakeFiles/global.dir/src/string_words.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/global.dir/includes_C.rsp -g -o CMakeFiles\\global.dir\\src\\swap.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\src\\swap.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/src/swap.c",
+  "output": "CMakeFiles/global.dir/src/swap.c.obj"
+},
+{
+  "directory": "C:/Users/Seba/Documents/GitHub/IoT/global/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles\\main.dir\\main.c.obj -c C:\\Users\\Seba\\Documents\\GitHub\\IoT\\global\\main.c",
+  "file": "C:/Users/Seba/Documents/GitHub/IoT/global/main.c",
+  "output": "CMakeFiles/main.dir/main.c.obj"
+}
+]

@@ -1,6 +1,8 @@
 // Convierta un número binario en uno decimal
 
 #include <stdbool.h>
+#include <stdio.h>
+#include "global.h"
 
 typedef int int32_t;
 

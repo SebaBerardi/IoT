@@ -1,6 +1,7 @@
 // Encuentre los elementos máximo y mínimo en un array.
 
 #include <stdio.h>
+#include "global.h"
 
 void max_index(void *array, size_t data_type, size_t array_size) {
     if (array == NULL || array_size == 0) {

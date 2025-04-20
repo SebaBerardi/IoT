@@ -2,6 +2,7 @@
 
 #include <string.h>  // Para memcpy
 #include <stdlib.h>  // Para malloc
+#include "global.h"
 
 int swap(void *elem_1, void *elem_2, size_t data_type) {
     if (elem_1 == NULL || elem_2 == NULL || data_type == 0) {

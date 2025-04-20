@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include "global.h"
 
 char *reverse_string(char *string) {
     if (!string) return NULL;

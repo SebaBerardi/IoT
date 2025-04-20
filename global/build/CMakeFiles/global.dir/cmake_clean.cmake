@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/global.dir/src/bin2dec.c.obj"
+  "CMakeFiles/global.dir/src/bin2dec.c.obj.d"
+  "CMakeFiles/global.dir/src/complex.c.obj"
+  "CMakeFiles/global.dir/src/complex.c.obj.d"
+  "CMakeFiles/global.dir/src/conNvocs.c.obj"
+  "CMakeFiles/global.dir/src/conNvocs.c.obj.d"
+  "CMakeFiles/global.dir/src/days_left.c.obj"
+  "CMakeFiles/global.dir/src/days_left.c.obj.d"
+  "CMakeFiles/global.dir/src/eq_solver.c.obj"
+  "CMakeFiles/global.dir/src/eq_solver.c.obj.d"
+  "CMakeFiles/global.dir/src/find_in_sting.c.obj"
+  "CMakeFiles/global.dir/src/find_in_sting.c.obj.d"
+  "CMakeFiles/global.dir/src/init_lab.c.obj"
+  "CMakeFiles/global.dir/src/init_lab.c.obj.d"
+  "CMakeFiles/global.dir/src/inverse_array.c.obj"
+  "CMakeFiles/global.dir/src/inverse_array.c.obj.d"
+  "CMakeFiles/global.dir/src/matrixsub.c.obj"
+  "CMakeFiles/global.dir/src/matrixsub.c.obj.d"
+  "CMakeFiles/global.dir/src/max-min.c.obj"
+  "CMakeFiles/global.dir/src/max-min.c.obj.d"
+  "CMakeFiles/global.dir/src/reverse_string.c.obj"
+  "CMakeFiles/global.dir/src/reverse_string.c.obj.d"
+  "CMakeFiles/global.dir/src/string_copy.c.obj"
+  "CMakeFiles/global.dir/src/string_copy.c.obj.d"
+  "CMakeFiles/global.dir/src/string_length.c.obj"
+  "CMakeFiles/global.dir/src/string_length.c.obj.d"
+  "CMakeFiles/global.dir/src/string_to.c.obj"
+  "CMakeFiles/global.dir/src/string_to.c.obj.d"
+  "CMakeFiles/global.dir/src/string_words.c.obj"
+  "CMakeFiles/global.dir/src/string_words.c.obj.d"
+  "CMakeFiles/global.dir/src/swap.c.obj"
+  "CMakeFiles/global.dir/src/swap.c.obj.d"
+  "libglobal.a"
+  "libglobal.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/global.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

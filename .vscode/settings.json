@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "limits": "c",
-        "string.h": "c"
-    }
+        "string.h": "c",
+        "stdbool.h": "c"
+    },
+    "cmake.sourceDirectory": "C:/Users/Seba/Documents/GitHub/IoT/global"
 }

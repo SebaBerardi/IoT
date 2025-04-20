@@ -1,13 +1,9 @@
 // Devuelva la resta de dos matrices
 
+#include "global.h"
+
 #define MAX_FILAS 10
 #define MAX_COLUMNAS 10
-
-typedef struct {
-    int filas;
-    int columnas;
-    int datos[MAX_FILAS][MAX_COLUMNAS];
-} matriz_t;
 
 matriz_t matrix_sub(matriz_t A, matriz_t B) {
     matriz_t C;

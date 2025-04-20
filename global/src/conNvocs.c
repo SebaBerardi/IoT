@@ -1,6 +1,7 @@
 // Cuente el número de vocales y consonantes en un string:
 
 #include <string.h>
+#include "global.h"
 
 int consonantes(char *string)
 {
