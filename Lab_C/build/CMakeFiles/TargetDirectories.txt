@@ -1,4 +1,0 @@
-C:/Users/Seba/Documents/GitHub/IoT/Lab_C/build/CMakeFiles/global.dir
-C:/Users/Seba/Documents/GitHub/IoT/Lab_C/build/CMakeFiles/main.dir
-C:/Users/Seba/Documents/GitHub/IoT/Lab_C/build/CMakeFiles/edit_cache.dir
-C:/Users/Seba/Documents/GitHub/IoT/Lab_C/build/CMakeFiles/rebuild_cache.dir

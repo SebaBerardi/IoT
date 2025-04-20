@@ -7,5 +7,4 @@ int main()
 {
     int a = bin2dec(0b110,true);
     printf("El valor decimal es: %d\n\n",a);
-
 }

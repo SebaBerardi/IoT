@@ -6,8 +6,8 @@
 		"type": "shell",
 		"command": "cmake",
 		"args": [
-		  "-S", "Lab_C",
-		  "-B", "Lab_C/build"
+		  "-S", "Lab_C/Parte_1",
+		  "-B", "Lab_C/Parte_1/build"
 		],
 		"group": "build",
 		"problemMatcher": []
@@ -17,7 +17,7 @@
 		"type": "shell",
 		"command": "cmake",
 		"args": [
-		  "--build", "Lab_C/build"
+		  "--build", "Lab_C/Parte_1/build"
 		],
 		"dependsOn": ["CMake Build"],
 		"group": "build",
@@ -26,7 +26,7 @@
 	  {
 		"label": "Run Executable",
 		"type": "shell",
-		"command": "./Lab_C/build/main.exe",
+		"command": "./Lab_C/Parte_1/build/main.exe",
 		"dependsOn": ["CMake Compile"],
 		"group": "test",
 		"problemMatcher": []
