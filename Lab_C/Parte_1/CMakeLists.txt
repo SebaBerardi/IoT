@@ -1,21 +1,24 @@
 cmake_minimum_required(VERSION 3.10)
+project(MiProyecto C)
 
-project(global_lib C)  # Usa 'C' o 'CXX' para C++
+# Habilitar compilación con estándares modernos de C
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD_REQUIRED ON)
 
-# === Configura la biblioteca ===
-# 1. Agrega los archivos fuente (.c)
-file(GLOB LIB_SOURCES "src/*.c")  # O lista manualmente: set(LIB_SOURCES src/func1.c src/func2.c)
+set(component_lib "components")
+set(include_lib "include")
+set(global "global")
 
-# 2. Crea la biblioteca (estática por defecto)
-add_library(global STATIC ${LIB_SOURCES})
+# Agregar subdirectorios de las librerías
+add_subdirectory("${component_lib}/${global}")
 
-# 3. Incluye los headers públicos
-target_include_directories(global PUBLIC include)
+# Definir el ejecutable principal
+add_executable(mi_programa src/main.c)
 
-# (Opcional) Configura estándar de C
-set(CMAKE_C_STANDARD 11)
+# Vincular las bibliotecas al ejecutable
+target_link_libraries(mi_programa "${global}")
 
-# Crea el ejecutable principal
-add_executable(main main.c)
-target_link_libraries(main PRIVATE global)
-target_include_directories(main PRIVATE include)
+# Agregar los directorios de encabezados de las bibliotecas
+target_include_directories(mi_programa PRIVATE 
+    "${component_lib}/${global}/${include_lib}"
+)
