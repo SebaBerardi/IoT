@@ -1,5 +1,3 @@
-/*Provar todas las funciones en este archivo, para ejecutar, Ctrl+Shift+P y buscar Tasks: Run Task */
-
 #include "global.h" 
 #include <stdio.h>
 
