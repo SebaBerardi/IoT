@@ -1,0 +1,6 @@
+C:/Users/Seba/Documents/GitHub/IoT/Lab_C/Parte_1/build/CMakeFiles/mi_programa.dir
+C:/Users/Seba/Documents/GitHub/IoT/Lab_C/Parte_1/build/CMakeFiles/edit_cache.dir
+C:/Users/Seba/Documents/GitHub/IoT/Lab_C/Parte_1/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Seba/Documents/GitHub/IoT/Lab_C/Parte_1/build/components/global/CMakeFiles/global.dir
+C:/Users/Seba/Documents/GitHub/IoT/Lab_C/Parte_1/build/components/global/CMakeFiles/edit_cache.dir
+C:/Users/Seba/Documents/GitHub/IoT/Lab_C/Parte_1/build/components/global/CMakeFiles/rebuild_cache.dir
