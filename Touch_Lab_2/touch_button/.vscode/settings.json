@@ -1,0 +1,17 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPathWin": "C:\\Users\\Seba\\esp\\v5.4.1\\esp-idf",
+  "idf.toolsPathWin": "c:\\Users\\Seba\\.espressif",
+  "idf.pythonInstallPath": "c:\\Users\\Seba\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+  "idf.openOcdConfigs": [
+    "board/esp32s2-kaluga-1.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32s2"
+  },
+  "idf.portWin": "COM6",
+  "idf.flashType": "UART",
+  "files.associations": {
+    "touch_button.h": "c"
+  }
+}
